@@ -7,11 +7,9 @@ from dotenv import load_dotenv
 import os
 import sys
 from sklearn.model_selection import train_test_split
-logging.info("1")
 load_dotenv()
 @dataclass
 class DataIngestionConfig:
-    logging.info("2")
     train_data_path: str=os.path.join('artifacts',"train.csv")
     test_data_path: str=os.path.join('artifacts',"test.csv")
     raw_data_path: str=os.path.join('artifacts',"data.csv")
@@ -19,11 +17,9 @@ class DataIngestionConfig:
 class DataIngestion:
     def __init__(self):
         self.ingestion_config=DataIngestionConfig()
-        logging.info("3")
     def initiate_data_ingestion(self):
         try:
             logging.info("Entered the data ingestion method")
-            logging.info("4")
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
             DATABASE_URL=os.environ.get('DATABASE_URL')
             engine = create_engine(DATABASE_URL)

@@ -17,10 +17,10 @@ test_data=load_csv(test_data_path)
 logging.info("data loaded in training pipeline")
 
 # getting labelled data
-X_train = train_data.drop(['diabetes'],axis=1)  
-X_test=test_data.drop(['diabetes'],axis=1) 
-y_train = train_data['diabetes']
-y_test = test_data['diabetes']
+X_train = train_data.drop(['Result'],axis=1)  
+X_test=test_data.drop(['Result'],axis=1) 
+y_train = train_data['Result']
+y_test = test_data['Result']
 logging.info("data labelling done")
 
 
