@@ -1,2 +1,2 @@
 model_name,test_accuracy,cv_accuracy,best_params
-GradientBoosting,0.6363636363636364,0.641629429022794,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}"
+GradientBoosting,0.6363636363636364,0.6406770480704129,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}"
