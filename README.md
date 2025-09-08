@@ -63,7 +63,7 @@ Returns:
 
 ```json
 {
-  "prediction": 1
+  "prediction": "positive"
 }
 ```
 
